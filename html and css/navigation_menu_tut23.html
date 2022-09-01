@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation</title>
+    <style>
+        .navBar {
+            background-color: rgb(112, 248, 173);
+        }
+
+        .navBar ul {
+            overflow: auto;
+        }
+
+        .navBar li {
+            float: left;
+            list-style: none;
+            margin: 4px 4px;
+            padding: 5px;
+        }
+
+        .navBar li a {
+            padding: 5px 20px;
+            text-decoration: none;
+            color: rgba(252, 0, 189, 0.639);
+            font-size: 30px;
+            font-style: oblique;
+        }
+        .navBar li a :hover{
+           color: yellow;
+           
+        }
+        /* .navBar:hover{
+            background-color: rgb(55, 43, 226);
+        } */
+        .navBar li:hover{
+            background-color:brown ;
+        }
+
+        .search {
+            float: right;
+            font-size: 20px;
+            padding: 4px 15px;
+            margin-top: 12px;
+            
+            
+        }
+        .navBar input{
+            border:3px solid rgb(222, 45, 75)  ;
+            border-radius: 10px;
+            width: 100px;
+            border-style:double;  
+            font-weight: bold;
+            color: rgb(209, 66, 66);
+        }
+        /* HOVER IS NOT WORKING */
+        .navBar input:hover{
+            background-color: darkgreen;
+
+        }
+       
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navBar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact us</a></li>
+                <div class="search">
+                    <input type="text" name="search" id="search" placeholder="search here" >
+                </div>
+            </ul>
+
+        </nav>
+
+    </header>
+</body>
+
+</html>

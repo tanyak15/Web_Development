@@ -1,0 +1,40 @@
+body {
+  font-family: sans-serif;
+}
+#app {
+  border: 2px solid black;
+  height: 100vh;
+}
+.container {
+  /* border: 2px solid darkseagreen; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.button-start {
+  /* color: palegreen; */
+  font-size: 2rem;
+  width: 8rem;
+}
+.content {
+  display: flex;
+  /* border: 2px solid gold; */
+  /* text-align: center; */
+  align-items: center;
+  justify-content: center;
+  margin: 1.5rem;
+}
+h4 {
+  border: 2px solid orchid;
+  text-align: center;
+  font-size: 2rem;
+  padding: 0.2rem;
+}
+.button-close {
+  border: 1px solid black;
+  height: 2rem;
+  font-size: 1rem;
+  margin: 3rem 1rem;
+}

@@ -1,0 +1,112 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  background-color: rgb(175, 216, 181);
+}
+
+h1 {
+  /* border: 2px solid palegreen; */
+  text-align: center;
+  margin: 1.3rem;
+  color: white;
+}
+.heading {
+  display: flex;
+  /* border: 2px solid palevioletred; */
+  justify-content: center;
+  margin: 1rem;
+  padding: 1rem;
+}
+#text-box {
+  padding: 0.5rem;
+  /* margin: 1rem; */
+  width: 35rem;
+  font-size: 1.3rem;
+}
+
+#add-button {
+  margin-left: 0.5rem;
+  padding: 0.5rem;
+  font-size: 1.3rem;
+}
+
+.title {
+  /* border: 2px solid peru; */
+  width: 37rem;
+  margin: auto;
+  /* text-align: center; */
+  padding: 5px;
+  font-size: 2rem;
+}
+.tasks {
+  /* border: 2px solid plum; */
+  text-align: center;
+  width: 37rem;
+  height: 15rem;
+  margin: auto;
+  padding: 0.2rem;
+  font-size: 1.2rem;
+  color: white;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.task {
+  display: flex;
+  padding: 0.5rem;
+  border: 2px solid pink;
+  font-size: 1.3rem;
+  margin: 0.3rem;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(247, 168, 168);
+  height: 5rem;
+}
+
+.delete-button {
+  display: flex;
+  /* margin-right: 0px; */
+  padding: 0.3rem;
+
+  border-radius: 0.3rem;
+
+  border: none;
+}
+
+.task-sentence {
+  /* border: 2px solid royalblue; */
+  /* display: flex; */
+  flex-grow: 2;
+  text-align: start;
+  margin-left: 1rem;
+  font-size: 1.7rem;
+}
+
+.date-time-container1 {
+  /* border: 2px solid firebrick; */
+  display: flex;
+  margin: 0.2rem;
+  font-size: 1rem;
+}
+.date-time-container2 {
+  /* border: 2px solid firebrick; */
+  display: flex;
+  margin: 0.2rem;
+  font-size: 1rem;
+}
+.created-date {
+  margin: 0rem 0.3rem;
+  /* display: flex; */
+  font-size: 1rem;
+}
+.created-time {
+  /* margin: 0.2rem; */
+  margin: 0rem 0.3rem;
+  font-size: 1rem;
+}
+.created-on {
+  display: flex;
+  text-align: center;
+  margin: 0.2rem;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on selectors</title>
+</head>
+<style>
+    h2 {
+        background-color: rgb(236, 160, 233);
+        color: slateblue;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    div li p{
+        color: brown;
+        background-color: rgb(163, 204, 206);
+        font-weight: bold;
+    }
+
+    /* if div is direct parent of p  or p is right inside then use this */
+    /* div > p{
+        color:whitesmoke;
+        background-color: rgb(154, 147, 237);
+        font-weight: bold;
+    } */
+
+    /* if p is right after div i.e p is the next sibling of */
+    /* if div is previous sibling of it then use this */
+    /* div + p{
+        color:whitesmoke;
+        background-color: rgb(154, 147, 237);
+        font-weight: bold;
+    } */
+</style>
+
+<body>
+    <h2>This is more on selectors</h2>
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li class="item"><p>another para inside li</p></li>
+                <li>this will not be affected</li>
+            </ul>
+            <p>This is a para</p>
+        </div>
+        <p>This is another para</p>
+
+    </div>
+    <p>This is outer most para</p>
+</body>
+
+</html>

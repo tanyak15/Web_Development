@@ -1,0 +1,122 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.container{
+    /* box-sizing: border-box; */
+    width: 100%;
+    height: 100%;
+    border: 3px solid rgb(20, 21, 21);
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+    background-color: rgb(183, 222, 238);
+}
+.leftBar{
+    width: 20vw;
+    height: 100vh;
+    /* background-color: rgb(185, 166, 248); */
+    /* border: 2px solid purple; */
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    /* margin: 2px; */
+
+}
+.title{
+    width: 20vw;
+    height: 20vh;
+    /* background-color: rgb(236, 148, 119); */
+    border-radius: 20px;
+    /* border: 2px solid khaki; */
+    margin: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.title p{
+    padding: 8px;
+    font-size: 25px;
+}
+.options{
+    width: 20vw;
+    height: 60vh;
+    /* background-color: rgb(240, 102, 217); */
+    border-radius: 20px;
+    margin: 2px;
+    margin-right: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 0px;
+ 
+}
+.options img{
+    /* border: 2px solid green; */
+    padding: 4px;
+    
+    border-radius: 30%;
+    display: flex;
+    /* margin: auto; */
+}
+.options img:hover{
+    background-color: cornflowerblue;
+}
+.box{
+    border: 2px solid black;
+    padding: 10px;
+    margin: 7px;
+    border-radius: 25px;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+/* #box1 */
+ span{
+    /* border: 2px solid palevioletred; */
+    margin-left:30px ;
+    font-size: 30px;
+    display: flex;
+    font-family: cursive;
+
+}
+span:hover{
+    color: blue;
+}
+
+.logo{
+    width: 20vw;
+    height: 20vh;
+    /* background-color: rgb(241, 245, 129); */
+    border-radius: 20px;
+    margin: 2px;
+    display: flex;
+    justify-content: center;
+    /* transform: translateX(-25px); */
+
+}
+.logo img{
+    /* border: 2px solid black; */
+    border-radius: 50%;
+    box-shadow:4px 4px 2px rgb(210, 208, 208);
+    transition: all 4s ease-in 0px;
+
+}
+/* .logo img:hover{
+    
+    transform: scale(.2);
+    transform: translateX(-70px);
+} */
+.main_content{
+    border: 2px solid rgb(243, 113, 219);
+    width: 80vw;
+    height: 100vh;
+    background-color: rgb(166, 248, 197);
+    border-radius: 20px;
+}

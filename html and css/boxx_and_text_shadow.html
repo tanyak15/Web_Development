@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box shadow and text shadow</title>
+    <style>
+        h1{
+            display: flex;
+            justify-content: center;
+        }
+        .container {
+            display: flex;
+            /* justify-content: center; */
+           
+        }
+        .card{
+            padding: 3px 12px;
+            border: 2px solid palevioletred;
+            /* width: 250px; */
+            margin: 13px;
+            background-color: aqua;
+            border-radius: 6px;
+            /* box-shadow: 10px 10px rgb(5, 102, 70);
+            box-shadow: 10px 10px 30px rgb(5, 102, 70); */
+            /* box-shadow: 10px 10px 30px 4px rgb(5, 102, 70); */
+            box-shadow: 10px 10px rgba(38, 35, 193, 0.56);
+           
+            /* box-shadow: inset 20px 50px pink ,10px 10px rgb(224, 51, 80) ; */
+            box-shadow:  2px 5px pink ,10px 10px rgb(224, 51, 80) ;
+            
+
+            
+            /* display: flex; */
+            
+        }
+        .card h1{
+            /* text-shadow: 1px 1px grey ; */
+            text-shadow: -2px -2px 2px white ;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>there are 3 cards</h1>
+    <div class="container">
+        <div class="card" id="card1">
+            <h1>This is CSS course</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui quas debitis, unde enim magni alias quo non distinctio magnam tenetur!</p>
+        </div>
+        <div class="card" id="card2">
+            <h1>This is HTML course</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non blanditiis incidunt voluptatibus deleniti et consequuntur dicta odit assumenda delectus porro.</p>
+        </div>
+        <div class="card" id="card3">
+            <h1>card 3</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur sunt aperiam, asperiores vel atque animi laboriosam itaque repellendus molestiae iure.</p>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transition</title>
+    <style>
+      
+        .container{
+            border: 2px solid blueviolet;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: crimson;
+        }
+        .container:hover{
+           background-color: palevioletred;
+            transition-duration: 2s; 
+        }
+           .item{
+               /* border: 2px solid rgb(244, 78, 78); */
+               display: flex;
+               font-size: 40px;
+               color: aquamarine;
+               height: 200px;
+               width: 200px;
+               align-items: center;
+               justify-content: center;
+               /* background-color: aquamarine; */
+           }
+           .item:hover{
+               color: aliceblue;
+               transition-duration: 2s;
+               /* transform: scale(3); */
+               transform: rotate(360deg);
+           }
+    </style>
+</head>
+<body> 
+    <div class="container">
+        <div class="item">TANYA </div>
+    </div>
+</body>
+</html>

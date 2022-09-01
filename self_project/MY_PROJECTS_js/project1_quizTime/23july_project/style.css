@@ -1,0 +1,47 @@
+* {
+  margin: 0px;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: aquamarine;
+}
+.uHalf {
+  /* border: 2px solid salmon; */
+  display: flex;
+  /* flex-direction: column; */
+  text-align: center;
+  justify-content: center;
+  padding: 2rem;
+  /* margin: 2rem; */
+}
+.input {
+  background-color: rgb(140, 196, 198);
+}
+.show {
+  background-color: antiquewhite;
+}
+.lHalf {
+  /* border: 2px solid salmon; */
+  margin-top: 2px;
+  text-align: center;
+}
+.box {
+  font-size: 2rem;
+  color: white;
+}
+input {
+  background-color: rgb(206, 218, 121);
+  border-radius: 1rem;
+  font-size: 2rem;
+  border-radius: 20px;
+}
+.show {
+  font-size: 2rem;
+  border-radius: 20px;
+}
+.show:hover {
+  cursor: pointer;
+}
+.input {
+}

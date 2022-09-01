@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>quiz game</title>
+    <link rel="stylesheet" href="styleQuiz.css" />
+  </head>
+  <body>
+    <!-- ********************************************************************************************************************************************************** -->
+
+    <!-- navigation bar starts -->
+
+    <div class="navbar">
+      <button class="button_start button">START</button>
+
+      <button class="button_startAgain button hidden">START AGAIN</button>
+
+      <div class="title bigger">QUIZ TIME</div>
+
+      <button class="button_reset button">RESET</button>
+    </div>
+
+    <!-- ********************************************************************************************************************************************************** -->
+
+    <!-- quis body starts -->
+
+    <div class="quiz_body hidden">
+      <div class="quesContainer">
+        <div class="ques">How are u?</div>
+        <button class="box button" id="option0">A</button>
+        <button class="box button" id="option1">B</button>
+        <button class="box button" id="option2">C</button>
+        <button class="box button" id="option3">D</button>
+        <button class="button_next button">NEXT</button>
+        <div class="score hidden">SCORE</div>
+      </div>
+    </div>
+
+    <!-- ********************************************************************************************************************************************************** -->
+    <script src="scriptQuiz.js"></script>
+  </body>
+</html>

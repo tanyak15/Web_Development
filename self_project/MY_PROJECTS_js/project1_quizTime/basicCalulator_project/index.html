@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>simple Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="result hidden">result</div>
+    <div class="input">
+      <input type="number" id="num1" class="input-number" />
+      <input type="number" id="num2" class="input-number" />
+    </div>
+    <div class="button-tray">
+      <button class="operation add" data-operator="+">Addition</button>
+      <!-- JAB BHE html ELEMENT KE ANDAR DATA STORE KRNA HOTA H TO WE USE data- (variable name)  -->
+      <button class="operation sub" data-operator="-">Subtraction</button>
+      <button class="operation div" data-operator="/">Division</button>
+      <button class="operation mul" data-operator="*">Multiplication</button>
+      <button class="operation rem" data-operator="%">Remainder</button>
+      <button class="operation exp" data-operator="**">Exponential</button>
+    </div>
+    <div class="bottom-tray">
+      <button class="bottom backSpc">Backspace</button>
+      <button class="bottom clear">clearAll</button>
+      <button class="bottom equal">EqualsTo</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
