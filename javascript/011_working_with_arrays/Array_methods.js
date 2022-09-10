@@ -67,6 +67,8 @@ const inputClosePin = document.querySelector(".form__input--pin");
 
 //***********************************************************************************//
 
+// 003 - simple array methods
+
 let arr = ["a", " b", "c", "d", "e"];
 
 // SLICE -- it does'nt mutates the original array
@@ -118,7 +120,7 @@ for (const [i, movement] of movements.entries()) {
   }
 }
 
-// for each method call the  call back function in every iteration
+// for each method call the call back function in every iteration
 console.log("-----FOR EACH-----");
 //  parameter sequence:(first element ,index,nd array)
 movements.forEach(function (movement, i, array) {
@@ -158,7 +160,7 @@ currenciesUnique.forEach(function (value, _, set) {
 
 // FIND METHOD
 
-// does;nt returns the array but returns the first element of an array which satisfies the condition
+// does'nt returns the array but returns the first element of an array which satisfies the condition
 
 const firstWithdrawl = movements.find(mov => mov < 0);
 console.log(movements);

@@ -404,7 +404,7 @@ console.log(Number.parseInt("e20")); //NaN
 console.log(Number.parseInt("36.7rem")); // 36
 console.log(Number.parseFloat("36.7rem")); //36.7
 
-// console.log(parseFloat("36.7rem"));
+console.log(parseFloat("36.7rem"));
 
 // to check if value is not a number
 console.log(Number.isNaN(20)); //F
@@ -516,9 +516,9 @@ console.log(huge + " is REALLY BIG!!");
 // huge gets converted into a string
 
 // division
-console.log(10n / 3n);
+console.log(10n / 3n); //3n
 console.log(10 / 3);
-console.log(17n / 3n);
+console.log(17n / 3n); //5n
 
 // 07_CREATING DATES
 
@@ -593,13 +593,13 @@ const pizzaTimer = setTimeout(
   3000,
   ...ingredients
 );
-// we scheduled this function call for 3 sec later
+//we scheduled this function call for 3 sec later
 console.log("waiting...");
 
-if (ingredients.includes("spinach")) clearTimeout(pizzaTimer);
+if (ingredients.includes("onion")) clearTimeout(pizzaTimer);
 
 // set timeout
-setInterval(function () {
-  const now = new Date();
-  console.log(now);
-}, 1000);
+// setInterval(function () {
+//   const now = new Date();
+//   console.log(now);
+// }, 10000);

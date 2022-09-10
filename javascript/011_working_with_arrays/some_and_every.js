@@ -36,6 +36,7 @@ console.log(movements);
 console.log(movements.includes(-130));
 
 // CONDITION (here we are giving a condition)
+// SOME -- returns true if any element satisfies the condition
 console.log(movements.some(mov => mov === -130));
 const anyDeposites = movements.some(mov => mov > 1500);
 
@@ -45,14 +46,14 @@ console.log(anyDeposites); //true --ie. we have more than one deposites here
 // returns true if all the elements satisfies the conditipn
 console.log(movements.every(mov => mov > 0));
 console.log(account4.movements.every(mov => mov > 0));
-
+console.log("**********************");
 // SEPERATE CALLBACK
 const deposit = mov => mov > 0;
 console.log(movements.some(deposit));
 console.log(movements.every(deposit));
 console.log(movements.filter(deposit));
 
-// FLAT METHOD
+// FLAT METHOD --concatinates all the sub array to a specific depth
 const arr = [[1, 2, 3], [4, 5, 6], 7, 8];
 console.log(arr.flat(1));
 
@@ -76,7 +77,7 @@ const addAll = accounts
 
 console.log(addAll);
 
-// flatmap
+// flatmap -- it reduces flat and map to flatMap only
 const addAll2 = accounts
   .flatMap(acc => acc.movements)
   .reduce((acc, mov) => mov + acc, 0);
@@ -86,6 +87,7 @@ console.log(addAll2);
 // 023_sorting arrays
 
 // strings
+// SORT -- it mutates the array
 const owners = ["Jonas", "Zack", "Adam", "Martha"];
 console.log(owners.sort());
 console.log(owners);
@@ -136,10 +138,10 @@ console.log(x);
 // EMPTY ARRYS + FILL METHOD
 // it mutates the arry nd fills the entire array with the given value
 // x.fill(1);
-x.fill(1, 3, 5);
+x.fill(1, 3, 5); //at position 3 to 5(not encluded) fill 1
 console.log(x);
 
-// fill(the value with witch u want to fill , the starting index , the ending index(not included))
+// fill(the value with which u want to fill , the starting index , the ending index(not included))
 arry.fill(34, 4, 6);
 console.log(arry);
 

@@ -63,23 +63,23 @@ const accounts = [account1, account2, account3, account4];
 
 const user = "Steven Thomas Williams";
 
-// const createUserNames = function (user) {
-//   const username = user
-//     .toLowerCase()
-//     .split(" ")
-//     //   .map(function (name) {
-//     //     return name[0];
-//     //   }
-//     //   OR
-//     // using arrow function
-//     .map(name => name[0])
-//     .join("");
-//   return username;
-// };
+const createUserNames = function (user) {
+  const username = user
+    .toLowerCase()
+    .split(" ")
+    //   .map(function (name) {
+    //     return name[0];
+    //   }
+    //   OR
+    // using arrow function
+    .map(name => name[0])
+    .join("");
+  return username;
+};
 
-// console.log(createUserNames("Sarah Smith"));
+console.log(createUserNames("Sarah Smith"));
 
-const createUserNames = function (accs) {
+const createUserNames1 = function (accs) {
   // we are not returning here as we are jst doing some side effects ...we are jst doing some work here
   accs.forEach(function (acc) {
     acc.username = acc.owner
@@ -90,7 +90,7 @@ const createUserNames = function (accs) {
   });
 };
 
-createUserNames(accounts);
+createUserNames1(accounts);
 console.log(accounts);
 
 // FILTER METHOD

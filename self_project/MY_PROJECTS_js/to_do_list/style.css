@@ -43,7 +43,7 @@ h1 {
 .tasks {
   /* border: 2px solid plum; */
   text-align: center;
-  width: 37rem;
+  width: 60rem;
   height: 15rem;
   margin: auto;
   padding: 0.2rem;
@@ -54,14 +54,15 @@ h1 {
 }
 .task {
   display: flex;
-  padding: 0.5rem;
+  /* padding: 0.5rem; */
   border: 2px solid pink;
-  font-size: 1.3rem;
-  margin: 0.3rem;
-  justify-content: space-between;
+  font-size: 1rem;
+  /* margin: 0.3rem; */
+  justify-content: space-around;
   align-items: center;
   background-color: rgb(247, 168, 168);
-  height: 5rem;
+  height: 10rem;
+  width: 50rem;
 }
 
 .delete-button {
@@ -109,4 +110,17 @@ h1 {
   display: flex;
   text-align: center;
   margin: 0.2rem;
+}
+
+.completed-task {
+  display: flex;
+  /* padding: 0.5rem; */
+  border: 2px solid grey;
+  font-size: 1rem;
+  /* margin: 0.3rem; */
+  justify-content: space-around;
+  align-items: center;
+  background-color: grey;
+  height: 10rem;
+  width: 50rem;
 }
