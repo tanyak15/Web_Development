@@ -22,7 +22,7 @@ const createTask = function (title) {
   return task;
 };
 
-// array k andar jo bhe task stored h unko
+// array k andar jo bhe task stored h or kab create ya complete hue h yeh "str bataega"
 const calcTime = function (task, str) {
   let time = "---";
   // console.log(time);
@@ -33,7 +33,7 @@ const calcTime = function (task, str) {
   }
   return time;
 };
-
+// human?.human1?.dob
 // we will pass task in calcDate function
 const calcDate = function (task, str) {
   let date = "---";
@@ -67,12 +67,6 @@ const deleteObj_addEventListners = function () {
   }
 };
 
-const taskCompleted = function () {
-  const checkBoxes = document.querySelectorAll(".check");
-  for (const [i, check] of checkBoxes.entries()) {
-    check.addEventListener("click ", function () {});
-  }
-};
 
 const checkBox_addEventListner = function () {
   const checkBoxes = document.querySelectorAll(".check");
@@ -101,7 +95,7 @@ const updateUI = function () {
   // agar yeh nhi dalenge to jo obj already present obj h vo har baar repete hoga jab bhe apn naya obj insert krenge
   //extra cheeze remove krta h
   tasks.innerHTML = "";
-  //wapis se array ke objeects ko GUI me convert krta h  warna
+  //wapis se array ke objeects ko GUI me convert krta h 
   for (const [i, taskObj] of array_task.entries()) {
     let html = createHtml(taskObj, i);
 
@@ -124,7 +118,6 @@ const updateUI = function () {
   }
 };
 
-// const insertTasks = function (html) {};
 
 // har task obj k liye new html create krne the isliye createHtml banaya h
 const createHtml = function (taskObj, indx) {

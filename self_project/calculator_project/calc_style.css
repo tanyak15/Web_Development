@@ -1,0 +1,88 @@
+body{
+    margin: 0rem;
+    padding: 0rem;
+}
+
+.layout{
+    
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-evenly;
+     */
+     border: 2px solid black;
+     height: 99vh;
+     width: 99.5vw;
+     justify-content: center;
+     align-items: center;
+}
+
+.title{
+    /* border: 2px solid firebrick; */
+    text-align: center;
+    font-size: 6rem;
+    width: 35rem;
+    padding: 2rem;
+    /* margin-bottom: 1.5rem; */
+    color: black;
+    font-family: 'Desyanti', sans-serif;
+                                                
+                                                
+
+}
+
+.box{
+    
+    /* border: 2px solid hotpink; */
+    text-align: center;
+    font-size: 3rem;
+    height: 40rem;
+    width: 40rem;
+    font-size: 4rem;
+    padding: 0.5rem;
+    
+}
+/* .text_area{
+    background-color: beige;
+    height: 9.5rem;
+    margin-bottom: .5rem;
+} */
+.buttons{
+    /* margin-top: 1rem; */
+    display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+    grid-template-columns: repeat(4,1fr);
+    grid-auto-rows: 5.7rem;
+    /* border: 2px solid black; */
+
+}
+
+.output{
+    /* background-color: beige; */
+    grid-column: 1 / 5;
+    border: 2px solid black;
+    /* grid-au: 7rem; */
+    display: grid;
+    justify-content: end;
+    align-items: center;
+    color: black;
+    padding-right: 1rem ;
+   
+}
+.zero{
+    grid-column: 1 / 3;
+}
+div,button{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 3rem;
+    color: white;
+}
+.orange{
+    background-color: #FF9500;
+}
+.light-gray{
+    background-color: #D4D4D2;  
+}
+.dark-gray{
+    background-color: #505050;
+}
+
