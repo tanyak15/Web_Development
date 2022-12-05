@@ -94,13 +94,13 @@ const checkBox_addEventListner = function () {
 const updateUI = function () {
   // agar yeh nhi dalenge to jo obj already present obj h vo har baar repete hoga jab bhe apn naya obj insert krenge
   //extra cheeze remove krta h
-  tasks.innerHTML = "";
+  content.innerHTML = "";
   //wapis se array ke objeects ko GUI me convert krta h 
   for (const [i, taskObj] of array_task.entries()) {
     let html = createHtml(taskObj, i);
 
     // isse GUI(box) create hora h , with 2 arguments ek to kaha pe dalna h (i.e position) or ek kya dalna h
-    tasks.insertAdjacentHTML("beforeend", html);
+    content.insertAdjacentHTML("beforeend", html);
     if (array_task[i].isCompleted) {
       document.querySelector(`#task-${i}`).classList.remove("task");
       document.querySelector(`#task-${i}`).classList.add("completed-task");
