@@ -4,7 +4,6 @@ import Task from "./Task";
 class TaskList extends React.Component {
   render() {
     const renderTasks = this.props.tasks.map((taskData) => {
-      // console.log(taskData);
       return (
         <div key={taskData.date}>
           <Task
